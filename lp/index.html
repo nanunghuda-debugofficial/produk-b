@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prompt Pack AI — 100+ Prompt ChatGPT untuk Content Creator</title>
+<meta name="description" content="100+ prompt ChatGPT siap pakai untuk content creator: caption, script, ide konten, email marketing, dan lainnya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #EC4899; --primary-dark: #DB2777; --primary-light: #F472B6;
+  --accent: #F59E0B; --dark: #0F172A; --text: #334155; --text-light: #64748B;
+  --bg: #FDF2F8; --white: #FFFFFF;
+  --hero: linear-gradient(160deg, #581C87 0%, #7C3AED 40%, #DB2777 100%);
+  --cta: linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Plus Jakarta Sans','Inter',-apple-system,sans-serif;color:var(--text);background:var(--bg);line-height:1.7;overflow-x:hidden}
+.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:200;background:var(--white);padding:12px 16px;box-shadow:0 -4px 20px rgba(0,0,0,0.15)}
+.sticky-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.sp-old{font-size:13px;color:var(--text-light);text-decoration:line-through}
+.sp-new{font-family:'Inter',sans-serif;font-size:18px;font-weight:800;color:var(--primary-dark)}
+.sp-btn{background:var(--cta);color:var(--dark);padding:12px 24px;border-radius:100px;text-decoration:none;font-weight:700;font-size:14px;white-space:nowrap}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.9);backdrop-filter:blur(20px);border-bottom:1px solid rgba(236,72,153,0.08)}
+.nav-in{max-width:1200px;margin:0 auto;padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Inter',sans-serif;font-weight:800;font-size:17px;color:var(--primary-dark);text-decoration:none}
+.nav-buy{background:var(--cta);color:var(--dark);padding:8px 18px;border-radius:100px;text-decoration:none;font-weight:700;font-size:12px}
+.hero{background:var(--hero);padding:110px 24px 70px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 50%,rgba(236,72,153,0.2) 0%,transparent 50%),radial-gradient(circle at 70% 50%,rgba(245,158,11,0.1) 0%,transparent 50%);animation:hf 20s ease-in-out infinite}
+@keyframes hf{0%,100%{transform:translate(0,0)}50%{transform:translate(-2%,-1%)}}
+.hc{position:relative;z-index:1;max-width:700px;margin:0 auto}
+.hbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#FBBF24;padding:6px 18px;border-radius:100px;font-size:12px;font-weight:600;margin-bottom:20px}
+.hero h1{font-family:'Inter',sans-serif;font-size:clamp(26px,4.5vw,44px);font-weight:900;color:white;line-height:1.15;margin-bottom:16px;letter-spacing:-0.02em}
+.hero h1 .hl{background:linear-gradient(135deg,#FBBF24 0%,#F59E0B 50%,#FCD34D 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{font-size:clamp(14px,2vw,17px);color:rgba(255,255,255,0.65);max-width:520px;margin:0 auto 28px;line-height:1.7}
+.hp{margin-bottom:20px}
+.hp .old{font-size:16px;color:rgba(255,255,255,0.4);text-decoration:line-through;margin-right:8px}
+.hp .new{font-family:'Inter',sans-serif;font-size:36px;font-weight:900;color:#FBBF24}
+.hp .note{font-size:12px;color:rgba(255,255,255,0.45);margin-top:2px}
+.btn-buy{display:inline-flex;align-items:center;gap:8px;background:var(--cta);color:var(--dark);padding:16px 40px;border-radius:100px;text-decoration:none;font-weight:800;font-size:16px;transition:all 0.3s;box-shadow:0 4px 20px rgba(245,158,11,0.4);border:none;cursor:pointer}
+.btn-buy:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(245,158,11,0.5)}
+.hg{margin-top:16px;font-size:12px;color:rgba(255,255,255,0.35)}
+.section{padding:72px 24px}
+.si{max-width:1100px;margin:0 auto}
+.sl{display:inline-block;background:rgba(236,72,153,0.08);color:var(--primary-dark);padding:5px 14px;border-radius:100px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:10px}
+.st{font-family:'Inter',sans-serif;font-size:clamp(22px,3.5vw,34px);font-weight:800;color:var(--dark);line-height:1.2;margin-bottom:10px;letter-spacing:-0.02em}
+.ss{font-size:15px;color:var(--text-light);max-width:520px;line-height:1.7}
+.sc{text-align:center}
+.sc .ss{margin:0 auto}
+.prompts{background:var(--white)}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:36px}
+.pcard{background:var(--bg);border-radius:16px;padding:24px;border:1px solid rgba(236,72,153,0.06);transition:all 0.3s}
+.pcard:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,0.08);border-color:var(--primary)}
+.picon{font-size:28px;margin-bottom:10px}
+.pcard h3{font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:var(--dark);margin-bottom:4px}
+.pcard p{font-size:12px;color:var(--text-light);line-height:1.5}
+.pcount{display:inline-block;background:rgba(236,72,153,0.1);color:var(--primary);padding:2px 10px;border-radius:100px;font-size:11px;font-weight:600;margin-top:8px}
+.how{background:var(--bg)}
+.hsteps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:36px}
+.hstep{text-align:center}
+.hstep .num{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#EC4899,#DB2777);display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-size:18px;font-weight:800;color:white;margin:0 auto 12px}
+.hstep h3{font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:var(--dark);margin-bottom:4px}
+.hstep p{font-size:12px;color:var(--text-light);line-height:1.5}
+.testi{background:var(--dark)}
+.testi .sl{background:rgba(255,255,255,0.1);color:#FBBF24}
+.testi .st{color:white}
+.testi .ss{color:rgba(255,255,255,0.55)}
+.tigrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:36px}
+.ticard{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:24px}
+.tistars{color:var(--accent);font-size:13px;margin-bottom:10px;letter-spacing:2px}
+.titext{font-size:13px;line-height:1.7;color:rgba(255,255,255,0.75);margin-bottom:14px;font-style:italic}
+.tia{display:flex;align-items:center;gap:10px}
+.tia-av{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#EC4899,#F472B6);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:white}
+.tia-n{font-weight:600;font-size:13px;color:white}
+.tia-r{font-size:11px;color:rgba(255,255,255,0.45)}
+.faq{background:var(--white)}
+.faq-list{max-width:640px;margin:32px auto 0}
+.faq-item{border:1px solid rgba(0,0,0,0.08);border-radius:12px;margin-bottom:8px;overflow:hidden}
+.faq-q{padding:16px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;color:var(--dark);cursor:pointer;display:flex;justify-content:space-between;align-items:center;background:none;border:none;width:100%;text-align:left;gap:12px}
+.faq-t{font-size:17px;color:var(--primary);transition:transform 0.3s;flex-shrink:0}
+.faq-item.active .faq-t{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height 0.3s}
+.faq-item.active .faq-a{max-height:180px}
+.faq-a p{padding:0 18px 16px;font-size:13px;color:var(--text-light);line-height:1.7}
+.cta-sec{background:var(--hero);padding:72px 24px;text-align:center;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 50% 50%,rgba(245,158,11,0.15) 0%,transparent 50%)}
+.ctac{position:relative;z-index:1;max-width:560px;margin:0 auto}
+.cta-sec h2{font-family:'Inter',sans-serif;font-size:clamp(22px,4vw,34px);font-weight:800;color:white;margin-bottom:10px;line-height:1.2}
+.cta-sec p{font-size:15px;color:rgba(255,255,255,0.6);margin-bottom:28px}
+.ctap{margin-bottom:16px}
+.ctap .old{font-size:15px;color:rgba(255,255,255,0.35);text-decoration:line-through;margin-right:8px}
+.ctap .new{font-family:'Inter',sans-serif;font-size:32px;font-weight:900;color:#FBBF24}
+.footer{background:var(--dark);padding:28px 24px;text-align:center}
+.footer p{color:rgba(255,255,255,0.3);font-size:12px}
+@media(max-width:768px){
+  .sticky-cta{display:block}
+  .hero{padding:90px 20px 56px}
+  .section{padding:56px 20px}
+  .nav-buy{display:none}
+}
+.fade-up{opacity:0;transform:translateY(20px);transition:all 0.6s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+<div class="sticky-cta"><div class="sticky-inner"><div><span class="sp-old">Rp 129.000</span><span class="sp-new">Rp 39.000</span></div><a href="https://nanunghuda-debugofficial.github.io/produk-b/checkout/" class="sp-btn">🛒 Beli Sekarang</a></div></div>
+<nav class="nav"><div class="nav-in"><a href="#" class="nav-logo">✨ PromptPack AI</a><a href="https://nanunghuda-debugofficial.github.io/produk-b/checkout/" class="nav-buy">Beli — Rp 39K</a></div></nav>
+<section class="hero">
+  <div class="hc">
+    <div class="hbadge">🤖 100+ Prompt AI — Copy, Paste, Jadi Konten</div>
+    <h1>Stop Writer's Block.<br><span class="hl">100+ Prompt AI Siap Pakai.</span></h1>
+    <p>Prompt ChatGPT yang sudah di-test dan terbukti menghasilkan konten berkualitas. Caption, script YouTube, email marketing, ide konten — semua ada. Tinggal copy, paste, edit sedikit, jadi!</p>
+    <div class="hp"><span class="old">Rp 129.000</span><span class="new">Rp 39.000</span><div class="note">Early Bird — Terbatas</div></div>
+    <a href="https://nanunghuda-debugofficial.github.io/produk-b/checkout/" class="btn-buy">🛒 Beli Sekarang — Rp 39.000</a>
+    <div class="hg">✅ Instant download ✅ Bonus template ✅ Garansi 7 hari</div>
+  </div>
+</section>
+<section class="section prompts" id="isi">
+  <div class="si">
+    <div class="sl">📦 Isi Paket</div>
+    <h2 class="st">100+ Prompt AI yang Anda Dapatkan</h2>
+    <p class="ss">Terorganisir dalam 8 kategori. Semua prompt sudah di-test dan menghasilkan output berkualitas.</p>
+    <div class="pgrid">
+      <div class="pcard fade-up"><div class="picon">📱</div><h3>Caption Social Media</h3><p>Caption Instagram, Twitter, LinkedIn yang engaging dan punya hook kuat</p><span class="pcount">20 prompt</span></div>
+      <div class="pcard fade-up"><div class="picon">🎬</div><h3>Script YouTube & Reels</h3><p>Script video dari hook sampai CTA. Format: pendek (30 detik) dan panjang (10 menit)</p><span class="pcount">15 prompt</span></div>
+      <div class="pcard fade-up"><div class="picon">💡</div><h3>Ide Konten</h3><p>Generator ide konten berdasarkan niche, trending topic, dan audience</p><span class="pcount">15 prompt</span></div>
+      <div class="pcard fade-up"><div class="picon">📧</div><h3>Email Marketing</h3><p>Subject line, body email, follow-up sequence, dan cold outreach</p><span class="pcount">15 prompt</span></div>
+      <div class="pcard fade-up"><div class="picon">📝</div><h3>Blog & Artikel SEO</h3><p>Outline artikel, intro yang hook, meta description, dan full draft</p><span class="pcount">10 prompt</span></div>
+      <div class="pcard fade-up"><div class="picon">🏪</div><h3>Copywriting Jualan</h3><p>Deskripsi produk, landing page copy, ad copy, dan product listing</p><span class="pcount">10 prompt</span></div>
+      <div class="pcard fade-up"><div class="picon">🤝</div><h3>Personal Branding</h3><p>Bio, about me, elevator pitch, dan konten thought leadership</p><span class="pcount">10 prompt</span></div>
+      <div class="pcard fade-up"><div class="picon">🎁</div><h3>Bonus: Cheat Sheet</h3><p>Panduan prompt engineering + template spreadsheet untuk tracking prompt favorit</p><span class="pcount">Bonus</span></div>
+    </div>
+  </div>
+</section>
+<section class="section how">
+  <div class="si">
+    <div class="sl">🔄 Cara Menggunakan</div>
+    <h2 class="st sc">3 Langkah Jadi Konten</h2>
+    <div class="hsteps">
+      <div class="hstep fade-up"><div class="num">1</div><h3>Pilih Prompt</h3><p>Buka PDF, pilih kategori dan prompt yang Anda butuhkan</p></div>
+      <div class="hstep fade-up"><div class="num">2</div><h3>Copy ke ChatGPT</h3><p>Copy prompt, paste ke ChatGPT. Isi variablenya (niche, produk, dll)</p></div>
+      <div class="hstep fade-up"><div class="num">3</div><h3>Edit & Publish</h3><p>Edit output sesuai kebutuhan. Tambah sentuhan personal. Publish!</p></div>
+    </div>
+  </div>
+</section>
+<section class="section testi">
+  <div class="si">
+    <div class="sl">💬 Testimoni</div>
+    <h2 class="st">Apa Kata Mereka?</h2>
+    <div class="tigrid">
+      <div class="ticard fade-up"><div class="tistars">★★★★★</div><p class="titext">"Saya habis 2 jam bikin 1 caption. Sekarang pakai prompt ini, 5 menit dapat 10 caption. Produktivitas naik drastis!"</p><div class="tia"><div class="tia-av">A</div><div><div class="tia-n">Anisa Rahma</div><div class="tia-r">Content Creator, Jakarta</div></div></div></div>
+      <div class="ticard fade-up"><div class="tistars">★★★★★</div><p class="titext">"Script YouTube-nya game changer. Hook-nya kuat, struktur jelas. Subscriber saya naik 40% setelah konsisten pakai teknik ini."</p><div class="tia"><div class="tia-av">B</div><div><div class="tia-n">Bayu Pratama</div><div class="tia-r">YouTuber Edukasi, Bandung</div></div></div></div>
+      <div class="ticard fade-up"><div class="tistars">★★★★★</div><p class="titext">"Email marketing prompt-nya open rate saya naik dari 15% ke 35%. Prompt-nya memang di-test, bukan asal-asalan."</p><div class="tia"><div class="tia-av">M</div><div><div class="tia-n">Maya Sari</div><div class="tia-r">Digital Marketing, Surabaya</div></div></div></div>
+    </div>
+  </div>
+</section>
+<section class="section faq">
+  <div class="si">
+    <div class="sl">❓ FAQ</div>
+    <h2 class="st sc">Pertanyaan yang Sering Ditanyakan</h2>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Apakah perlu bayar ChatGPT?<span class="faq-t">+</span></button><div class="faq-a"><p>Bisa pakai ChatGPT gratis (GPT-3.5). Tapi hasilnya lebih enak pakai GPT-4. Kompatibel dengan keduanya.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Formatnya apa?<span class="faq-t">+</span></button><div class="faq-a"><p>PDF dengan prompt yang sudah terorganiserti per kategori. Tinggal copy-paste. Bonus: spreadsheet template.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Apakah prompt ini bisa untuk niche apa saja?<span class="faq-t">+</span></button><div class="faq-a"><p>Ya, semua prompt bersifat universal. Anda tinggal isi variablenya: niche, produk, audience, dll. Cocok untuk semua industri.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Apakah perlu skill khusus?<span class="faq-t">+</span></button><div class="faq-a"><p>Tidak. Cukup copy prompt, paste ke ChatGPT, edit outputnya. Tidak perlu coding atau desain.</p></div></div>
+    </div>
+  </div>
+</section>
+<section class="cta-sec">
+  <div class="ctac">
+    <h2>Siap 10x Lebih Cepat Bikin Konten?</h2>
+    <p>100+ prompt AI siap pakai + bonus cheat sheet. Download langsung setelah pembayaran.</p>
+    <div class="ctap"><span class="old">Rp 129.000</span><span class="new">Rp 39.000</span></div>
+    <a href="https://nanunghuda-debugofficial.github.io/produk-b/checkout/" class="btn-buy">🛒 Beli Sekarang — Rp 39.000</a>
+    <div style="margin-top:14px;font-size:12px;color:rgba(255,255,255,0.35)">✅ Instant download ✅ Bonus cheat sheet ✅ Garansi 7 hari</div>
+  </div>
+</section>
+<footer class="footer"><p>© 2026 PromptPack AI — Prompt AI untuk Content Creator Indonesia</p></footer>
+<script>
+function toggleFaq(btn){const item=btn.parentElement;const a=item.classList.contains('active');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('active'));if(!a)item.classList.add('active')}
+const obs=new IntersectionObserver((e)=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:0.1,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — PromptPack AI | 100+ Prompt ChatGPT</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#EC4899;--primary-dark:#DB2777;--accent:#F59E0B;--dark:#0F172A;--text:#334155;--text-light:#64748B;--bg:#FDF2F8;--white:#FFFFFF;--success:#10B981;--hero:linear-gradient(160deg,#581C87 0%,#7C3AED 40%,#DB2777 100%)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Plus Jakarta Sans','Inter',-apple-system,sans-serif;color:var(--text);background:var(--bg);line-height:1.7}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+@media(max-width:768px){.wrap{grid-template-columns:1fr;padding:20px 16px}}
+a.back{font-size:13px;color:var(--primary);text-decoration:none;font-weight:600;display:inline-block;margin-bottom:12px}
+.sum{background:var(--white);border-radius:20px;padding:28px;border:1px solid rgba(0,0,0,0.06);box-shadow:0 4px 20px rgba(0,0,0,0.06);position:sticky;top:20px}
+.sum h2{font-family:'Inter',sans-serif;font-size:17px;font-weight:700;color:var(--dark);margin-bottom:14px}
+.item{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid rgba(0,0,0,0.06)}
+.thumb{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#FDF2F8,#FCE7F3);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
+.info h3{font-size:14px;font-weight:700;color:var(--dark);margin-bottom:2px}
+.info p{font-size:12px;color:var(--text-light);line-height:1.5}
+.pr{display:flex;justify-content:space-between;align-items:center;padding:8px 0;font-size:13px}
+.pr .l{color:var(--text-light)}
+.pr .v{font-weight:600;color:var(--dark)}
+.pr.d .v{color:var(--success)}
+.pr.t{border-top:2px solid rgba(0,0,0,0.08);margin-top:6px;padding-top:14px;font-size:16px;font-weight:800}
+.pr.t .v{font-family:'Inter',sans-serif;font-size:22px;color:var(--primary-dark)}
+.old{text-decoration:line-through;color:var(--text-light);font-size:12px}
+.guarantee{display:flex;align-items:center;gap:10px;background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.15);border-radius:12px;padding:14px;margin-top:16px}
+.guarantee .i{font-size:20px}
+.guarantee .t{font-size:12px;color:var(--text);line-height:1.5}
+.guarantee .t strong{color:var(--success)}
+.form-box{background:var(--white);border-radius:20px;padding:28px;border:1px solid rgba(0,0,0,0.06);box-shadow:0 4px 20px rgba(0,0,0,0.06)}
+.form-box h2{font-family:'Inter',sans-serif;font-size:18px;font-weight:800;color:var(--dark);margin-bottom:6px}
+.form-box .sub{font-size:13px;color:var(--text-light);margin-bottom:20px}
+.steps{display:flex;gap:6px;margin-bottom:20px}
+.step{flex:1;text-align:center;padding:8px 4px;border-radius:8px;font-size:10px;font-weight:600;color:var(--text-light);background:#F1F5F9}
+.step.done{background:rgba(16,185,129,0.1);color:var(--success)}
+.step.active{background:rgba(236,72,153,0.1);color:var(--primary)}
+.bank{background:linear-gradient(135deg,#1E293B,#0F172A);border-radius:14px;padding:24px;color:white;margin-bottom:20px}
+.bank .bn{font-size:11px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px}
+.bank .bl{font-family:'Inter',sans-serif;font-size:18px;font-weight:800;color:white;margin-bottom:16px}
+.bd{margin-bottom:10px}
+.bd .lbl{font-size:10px;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.05em}
+.bd .val{font-family:'Inter',sans-serif;font-size:20px;font-weight:800;color:#FBBF24;letter-spacing:2px;display:flex;align-items:center;justify-content:space-between;margin-top:2px}
+.bd .val .cp{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:3px 10px;border-radius:6px;font-size:10px;font-weight:600;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;transition:all 0.2s}
+.bd .val .cp:hover{background:rgba(255,255,255,0.2)}
+.bd .val .cp.ok{background:var(--success);border-color:var(--success)}
+.bd.name .val{font-size:15px;color:rgba(255,255,255,0.75);letter-spacing:0;font-weight:600}
+.bnote{background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.3);border-radius:8px;padding:10px 14px;margin-top:14px;font-size:12px;color:#FBBF24;line-height:1.5}
+.fg{margin-bottom:16px}
+.fg label{display:block;font-size:12px;font-weight:600;color:var(--dark);margin-bottom:4px}
+.fg input,.fg select{width:100%;padding:10px 14px;border-radius:8px;border:2px solid rgba(0,0,0,0.08);font-size:14px;font-family:'Plus Jakarta Sans',sans-serif;color:var(--text);transition:border-color 0.2s;background:#FDF2F8}
+.fg input:focus,.fg select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(236,72,153,0.1)}
+.fg input::placeholder{color:var(--text-light)}
+.up{border:2px dashed rgba(236,72,153,0.3);border-radius:10px;padding:20px;text-align:center;cursor:pointer;transition:all 0.2s;background:rgba(236,72,153,0.02)}
+.up:hover{border-color:var(--primary);background:rgba(236,72,153,0.05)}
+.up .i{font-size:28px;margin-bottom:6px}
+.up .t{font-size:13px;color:var(--text);font-weight:600}
+.up .h{font-size:11px;color:var(--text-light);margin-top:2px}
+.up.ok{border-color:var(--success);background:rgba(16,185,129,0.05)}
+.up.ok .t{color:var(--success)}
+#fIn{display:none}
+.btn{width:100%;padding:14px;border-radius:10px;background:linear-gradient(135deg,#EC4899,#DB2777);color:white;font-weight:700;font-size:15px;border:none;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;transition:all 0.3s;box-shadow:0 4px 16px rgba(236,72,153,0.3);display:flex;align-items:center;justify-content:center;gap:8px}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(236,72,153,0.4)}
+.btn:disabled{opacity:0.5;cursor:not-allowed;transform:none}
+.overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(15,23,42,0.8);backdrop-filter:blur(10px);z-index:1000;align-items:center;justify-content:center}
+.overlay.show{display:flex}
+.sbox{background:white;border-radius:20px;padding:40px;text-align:center;max-width:420px;margin:20px;box-shadow:0 20px 60px rgba(0,0,0,0.3)}
+.sbox .i{font-size:56px;margin-bottom:12px}
+.sbox h2{font-family:'Inter',sans-serif;font-size:22px;font-weight:800;color:var(--dark);margin-bottom:8px}
+.sbox p{font-size:14px;color:var(--text-light);line-height:1.7;margin-bottom:20px}
+.sbox .btn-done{display:inline-block;padding:12px 28px;border-radius:100px;background:linear-gradient(135deg,#10B981,#059669);color:white;text-decoration:none;font-weight:700;font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div>
+    <a href="https://nanunghuda-debugofficial.github.io/produk-b/" class="back">← Kembali ke Landing Page</a>
+    <div class="sum">
+      <h2>📦 Ringkasan Pesanan</h2>
+      <div class="item">
+        <div class="thumb">🤖</div>
+        <div class="info"><h3>PromptPack AI — 100+ Prompt ChatGPT</h3><p>8 kategori prompt + bonus cheat sheet \u00b7 Format: PDF + Spreadsheet</p></div>
+      </div>
+      <div class="pr"><span class="l">Harga normal</span><span class="v"><span class="old">Rp 129.000</span></span></div>
+      <div class="pr d"><span class="l">Diskon Early Bird</span><span class="v">- Rp 90.000</span></div>
+      <div class="pr t"><span class="l" style="font-size:15px;color:var(--dark)">Total Bayar</span><span class="v">Rp 39.000</span></div>
+    </div>
+    <div class="guarantee"><div class="i">🛡️</div><div class="t"><strong>Garansi 7 Hari</strong><br>Jika tidak puas, uang 100% dikembalikan tanpa syarat.</div></div>
+  </div>
+  <div class="form-box">
+    <h2>💳 Pembayaran</h2>
+    <p class="sub">Transfer ke rekening berikut, lalu konfirmasi di bawah.</p>
+    <div class="steps"><div class="step done">1. Transfer</div><div class="step active">2. Konfirmasi</div><div class="step">3. Terima File</div></div>
+    <div class="bank">
+      <div class="bn">Transfer Bank</div>
+      <div class="bl">🏦 BSI (Bank Syariah Indonesia)</div>
+      <div class="bd"><div class="lbl">Nomor Rekening</div><div class="val">7190166168 <button class="cp" onclick="copyText('7190166168',this)">Copy</button></div></div>
+      <div class="bd name"><div class="lbl">Atas Nama</div><div class="val">IMAM</div></div>
+      <div class="bnote">⚠️ Transfer tepat <strong>Rp 39.000</strong> agar otomatis terverifikasi.</div>
+    </div>
+    <form onsubmit="return submitForm(event)">
+      <div class="fg"><label>Nama Lengkap *</label><input type="text" id="nama" placeholder="Masukkan nama lengkap" required></div>
+      <div class="fg"><label>Email *</label><input type="email" id="email" placeholder="contoh@email.com" required></div>
+      <div class="fg"><label>Nomor WhatsApp *</label><input type="tel" id="wa" placeholder="08xxxxxxxxxx" required></div>
+      <div class="fg"><label>Jumlah Transfer</label><input type="text" value="Rp 39.000" disabled style="background:#f0f0f0;cursor:not-allowed"></div>
+      <div class="fg"><label>Bukti Transfer *</label><div class="up" id="upArea" onclick="document.getElementById('fIn').click()"><div class="i">📎</div><div class="t">Klik untuk upload bukti transfer</div><div class="h">JPG, PNG, PDF. Maks 5MB.</div></div><input type="file" id="fIn" accept="image/*,.pdf" onchange="handleFile(this)"></div>
+      <button type="submit" class="btn" id="sBtn">✅ Konfirmasi Pembayaran</button>
+    </form>
+  </div>
+</div>
+<div class="overlay" id="ov"><div class="sbox"><div class="i">🎉</div><h2>Konfirmasi Terkirim!</h2><p>Terima kasih! Kami akan verifikasi dalam 1x24 jam dan mengirim link download ke email/WhatsApp Anda.</p><a href="https://nanunghuda-debugofficial.github.io/produk-b/" class="btn-done">Kembali ke Beranda</a></div></div>
+<script>
+function copyText(t,b){navigator.clipboard.writeText(t).then(()=>{b.textContent='Copied!';b.classList.add('ok');setTimeout(()=>{b.textContent='Copy';b.classList.remove('ok')},2000)})}
+function handleFile(inp){const a=document.getElementById('upArea');if(inp.files&&inp.files[0]){a.classList.add('ok');a.querySelector('.t').textContent='✅ '+inp.files[0].name;a.querySelector('.h').textContent='File siap diupload'}}
+function submitForm(e){e.preventDefault();const b=document.getElementById('sBtn');b.disabled=true;b.textContent='⏳ Mengirim...';setTimeout(()=>{document.getElementById('ov').classList.add('show')},1500);return false}
+</script>
+</body>
+</html>
